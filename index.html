@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falling Stars Universe - Under Construction</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #0f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .stars {
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            background: url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+            animation: moveStars 100s linear infinite;
+        }
+        .falling-stars {
+            position: absolute;
+            width: 2px;
+            height: 20vh;
+            background: linear-gradient(to bottom, transparent, white);
+            animation: fall 8s linear infinite;
+        }
+        @keyframes moveStars {
+            from { background-position: 0 0; }
+            to { background-position: -10000px 10000px; }
+        }
+        @keyframes fall {
+            0% { transform: translateY(-100vh); }
+            100% { transform: translateY(100vh); }
+        }
+        .container {
+            position: relative;
+            z-index: 1;
+        }
+        .construction-icon {
+            font-size: 5em;
+            color: #0f0;
+        }
+        h1 {
+            font-size: 3em;
+            color: #0f0;
+        }
+        p {
+            font-size: 1.2em;
+            color: #0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="falling-stars" style="left: 10%; animation-delay: 0s;"></div>
+    <div class="falling-stars" style="left: 20%; animation-delay: 0.5s;"></div>
+    <div class="falling-stars" style="left: 30%; animation-delay: 1s;"></div>
+    <div class="falling-stars" style="left: 40%; animation-delay: 1.5s;"></div>
+    <div class="falling-stars" style="left: 50%; animation-delay: 2s;"></div>
+    <div class="falling-stars" style="left: 60%; animation-delay: 2.5s;"></div>
+    <div class="falling-stars" style="left: 70%; animation-delay: 3s;"></div>
+    <div class="falling-stars" style="left: 80%; animation-delay: 5s;"></div>
+    <div class="falling-stars" style="left: 90%; animation-delay: 0.1s;"></div>
+    
+    <div class="container">
+      <h2>Welcome Friends </h2>
+        <h1>This is Soham's Website </h1>
+        <h2>Website Under Construction</h2>
+    </div>
+</body>
+</html>
